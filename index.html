@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="et"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hind kullas — mis asjad maksavad kullas</title>
+<meta name="description" content="Mitu grammi või untsi kulda maksab Tallinna ruutmeeter, Big Mac, palk või iPhone. Iga number allikaga.">
+<meta property="og:title" content="Hind kullas — mis asjad maksavad kullas"><meta property="og:description" content="Igapäevased hinnad grammides ja untsides kulda.">
+<meta property="og:image" content="https://hindkullas.ee/assets/og.png"><meta property="og:url" content="https://hindkullas.ee/"><meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/style.css"></head><body>
+<header><a href="#" class="logo">hind<b>kullas</b>.ee</a><nav><a href="#hind">Kullahind</a><a href="#asjad">Asjad</a><a href="#ajalugu">2000 vs täna</a><a href="#kalkulaator">Kalkulaator</a><a href="#allikad">Allikad</a></nav></header>
+<main>
+<section id="hind" class="hero"><h1>Mis asjad maksavad <span>kullas</span>?</h1>
+<div class="price"><div><strong id="eurg">…</strong><small>€ / gramm</small></div><div><strong id="euroz">…</strong><small>€ / troy unts</small></div></div>
+<p class="meta" id="goldmeta"></p></section>
+<section id="fakt" class="fact"><h2>Nädala fakt</h2><p id="faktText">…</p></section>
+<section id="asjad"><h2>Asjad kullas</h2><div class="grid" id="items"></div></section>
+<section id="ajalugu"><h2>2000 vs täna</h2><div id="history"></div></section>
+<section id="kalkulaator"><h2>Kalkulaator</h2>
+<label>Summa eurodes <input id="eur" type="number" min="0" step="any" value="1000" inputmode="decimal"></label>
+<p class="calc"><strong id="outg">–</strong> g &nbsp;·&nbsp; <strong id="outoz">–</strong> oz</p>
+<label>…või grammid kulda <input id="g" type="number" min="0" step="any" placeholder="nt 10"></label>
+<p class="calc">= <strong id="outeur">–</strong> €</p></section>
+<section id="allikad"><h2>Allikad</h2><ul id="sources"></ul><h3>Puuduvad andmed</h3><ul id="missing"></ul>
+<p class="meta">1 troy unts = 31,1034768 g. Kullahind €/oz = USD/oz ÷ EKP EUR/USD kurss. Andmed: <a href="data/prices.json">data/prices.json</a>.</p></section>
+</main><footer>hindkullas.ee — ei ole investeerimisnõu.</footer>
+<script src="assets/app.js"></script></body></html>

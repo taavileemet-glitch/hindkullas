@@ -1,0 +1,126 @@
+{
+  "updated": "2026-11-04",
+  "gold": {
+    "usd_per_oz": 4036.0,
+    "source": "gold-api.com (XAU spot)",
+    "url": "https://api.gold-api.com/price/XAU",
+    "date": "2026-11-04T08:12:58Z"
+  },
+  "fx": {
+    "usd_per_eur": 1.1179,
+    "source": "Euroopa Keskpank (EKP) viitekurss",
+    "url": "https://data-api.ecb.europa.eu/service/data/EXR/D.USD.EUR.SP00.A?lastNObservations=1&format=csvdata",
+    "date": "2026-11-03"
+  },
+  "items": [
+    {
+      "id": "tallinn-m2",
+      "name": "1 m² korterit Tallinnas",
+      "eur": 3250.78,
+      "note": "keskmine tehinguhind, okt 2026 (mediaan 2955,08)",
+      "source": "Maa- ja Ruumiamet via BNS / Päevauudised",
+      "url": "https://www.paevauudised.ee/eesti/tallinna-korterite-ruutmeetri-hind-tousis-aastaga-45-protsenti/",
+      "date": "2026-11-03"
+    },
+    {
+      "id": "tartu-m2",
+      "name": "1 m² korterit Tartus",
+      "eur": 2542,
+      "note": "Tartu linna mediaanhind, II kv 2026",
+      "source": "Maa- ja Ruumiamet via adre.ee",
+      "url": "https://adre.ee/omavalitsus/tartu-linn",
+      "date": "2026-11-04"
+    },
+    {
+      "id": "big-mac",
+      "name": "Big Mac",
+      "eur": 6.19,
+      "note": "euroala hind (Eesti eraldi rida puudub), juuli 2026",
+      "source": "The Economist Big Mac Index",
+      "url": "https://raw.githubusercontent.com/TheEconomist/big-mac-data/master/output-data/big-mac-full-index.csv",
+      "date": "2026-07-01"
+    },
+    {
+      "id": "ulikond",
+      "name": "Rätsepaülikond (2-osaline)",
+      "eur": 720,
+      "note": "SUITUP Tallinn hinnakiri, alates",
+      "source": "SUITUP",
+      "url": "https://suitup.ee/hinnad/",
+      "date": "2026-11-04"
+    },
+    {
+      "id": "bensiin-95",
+      "name": "1 l bensiini 95",
+      "eur": 1.887,
+      "note": "riigi keskmine",
+      "source": "EK Weekly Oil Bulletin via fuel-prices.eu",
+      "url": "https://www.fuel-prices.eu/Estonia/et",
+      "date": "2026-10-26"
+    },
+    {
+      "id": "piim",
+      "name": "1 l piima (Alma 2,5%)",
+      "eur": 1.25,
+      "note": "Rimi e-pood",
+      "source": "Rimi",
+      "url": "https://www.rimi.ee/epood/ee/otsing?query=alma%20piim%202%2C5",
+      "date": "2026-11-04"
+    },
+    {
+      "id": "iphone",
+      "name": "iPhone 17 256 GB",
+      "eur": 1169,
+      "note": "Euronics tootelehe hind",
+      "source": "Euronics",
+      "url": "https://www.euronics.ee/telefonid/nutitelefonid/nutitelefonid/mg6j4hxfsa/apple-iphone-17-256-gb-must-nutitelefon",
+      "date": "2026-11-04"
+    },
+    {
+      "id": "palk",
+      "name": "Keskmine brutokuupalk",
+      "eur": 2243,
+      "note": "II kv 2026",
+      "source": "Statistikaamet (PA111)",
+      "url": "https://stat.ee/et/avasta-statistikat/valdkonnad/tooelu/palk-ja-toojoukulu/keskmine-brutokuupalk",
+      "date": "2026-09-03"
+    }
+  ],
+  "missing": [
+    {
+      "name": "Uus auto",
+      "reason": "usaldusväärset esinduse hinnakirja ei leitud/kinnitatud"
+    },
+    {
+      "name": "Keskmine palk 2000",
+      "reason": "Statistikaameti seeria (PA001) algab 2002"
+    },
+    {
+      "name": "Tartu m² 2000",
+      "reason": "Maa-ameti andmebaas algab 2003"
+    }
+  ],
+  "history": [
+    {
+      "id": "tallinn-2000",
+      "name": "Tallinna korteri m² 2000 vs täna",
+      "then": {
+        "year": 2000,
+        "eur_m2": 340.33,
+        "source": "Statistikaamet KV111 (2-toalised, kinnisvarabüroode tehingud, linnaosade keskmine, I–IV kv keskmine; ühik eurot)",
+        "url": "https://andmed.stat.ee/et/stat/KV111",
+        "date": "2026-11-04"
+      },
+      "gold_then": {
+        "usd_per_oz": 279,
+        "usd_per_eur": 0.9236,
+        "source": "LBMA aastakeskmine via metalcharts.org; EKP 2000 aastakeskmine kurss",
+        "url": "https://metalcharts.org/gold-price-history/2000",
+        "url2": "https://data-api.ecb.europa.eu/service/data/EXR/A.USD.EUR.SP00.A?startPeriod=2000&endPeriod=2000&format=csvdata",
+        "date": "2026-11-04"
+      },
+      "now_item": "tallinn-m2",
+      "method": "Metoodika erineb: 2000 = Statistikaameti KV111 kinnisvarabüroode vahendatud kahetoaliste korterite keskmine (2000–2001 vallasvara lepingud); täna = Maa- ja Ruumiameti kõigi korteritehingute keskmine. Kulla 2000. a hind = LBMA aastakeskmine USD ÷ EKP aastakeskmine kurss. Võrdlus on suunav, mitte täpne."
+    }
+  ]
+}
