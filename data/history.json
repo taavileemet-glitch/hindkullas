@@ -1,0 +1,262 @@
+{
+ "updated": "2026-11-04",
+ "years": [
+  2000,
+  2005,
+  2010,
+  2015,
+  2020,
+  2025
+ ],
+ "eek_eur": 15.6466,
+ "note": "Kroonides (EEK) avaldatud väärtused on ümber arvutatud kursiga 1 € = 15,6466 kr. Tühi lahter (—) = allikat ei leitud; väärtusi ei ole tuletatud ega interpoleeritud. Viimane rida „täna” tuleb data/prices.json failist.",
+ "gold": {
+  "name": "Kuld",
+  "years": {
+   "2000": {
+    "usd_per_oz": 279,
+    "usd_per_eur": 0.9236,
+    "eur_per_oz": 302.07
+   },
+   "2005": {
+    "usd_per_oz": 444,
+    "usd_per_eur": 1.2441,
+    "eur_per_oz": 356.89
+   },
+   "2010": {
+    "usd_per_oz": 1225,
+    "usd_per_eur": 1.3257,
+    "eur_per_oz": 924.03
+   },
+   "2015": {
+    "usd_per_oz": 1160,
+    "usd_per_eur": 1.1095,
+    "eur_per_oz": 1045.5
+   },
+   "2020": {
+    "usd_per_oz": 1770,
+    "usd_per_eur": 1.1422,
+    "eur_per_oz": 1549.65
+   },
+   "2025": {
+    "usd_per_oz": 3432,
+    "usd_per_eur": 1.13,
+    "eur_per_oz": 3037.21
+   }
+  },
+  "sources": [
+   {
+    "name": "LBMA kulla aastakeskmine (USD/oz) via metalcharts.org",
+    "url": "https://metalcharts.org/gold-price-history/2000",
+    "date": "2026-11-04",
+    "note": "aastalehed /gold-price-history/{aasta}, ümardatud täisdollarini"
+   },
+   {
+    "name": "Euroopa Keskpank, EUR/USD aastakeskmine kurss",
+    "url": "https://data-api.ecb.europa.eu/service/data/EXR/A.USD.EUR.SP00.A?startPeriod=1999&format=csvdata",
+    "date": "2026-11-04"
+   }
+  ],
+  "method": "€/oz = LBMA aastakeskmine USD/oz ÷ EKP aastakeskmine USD/EUR; €/g = €/oz ÷ 31,1034768."
+ },
+ "series": [
+  {
+   "id": "tallinn-m2",
+   "now_item": "tallinn-m2",
+   "name": "1 m² korterit Tallinnas",
+   "unit": "€/m²",
+   "text": "Tallinna korteri ruutmeeter",
+   "values": {
+    "2000": 340.33,
+    "2005": 1158.4,
+    "2010": 952.09,
+    "2015": 1574,
+    "2020": 2144,
+    "2025": 3058
+   },
+   "notes": {
+    "2000": "KV111 I–IV kv keskmine",
+    "2005": "KV111 I–IV kv keskmine",
+    "2010": "14 897 kr/m² ÷ 15,6466"
+   },
+   "sources": [
+    {
+     "name": "Statistikaamet KV111 (2-toalised korterid, kinnisvarabüroode tehingud, linnaosade keskmine) – 2000, 2005",
+     "url": "https://andmed.stat.ee/et/stat/KV111",
+     "date": "2026-11-04"
+    },
+    {
+     "name": "Maa-amet, Eesti kinnisvaraturg 2010 (Tallinna linn, keskmine hind kr/m²)",
+     "url": "https://www.maaruum.ee/sites/default/files/documents/2021-06/eesti_kinnisvaraturg_2010.pdf",
+     "date": "2026-11-04"
+    },
+    {
+     "name": "Maa-amet, Eesti kinnisvaraturg 2015",
+     "url": "https://www.maaruum.ee/sites/default/files/documents/2021-06/eesti_kinnisvaraturg_2015.pdf",
+     "date": "2026-11-04"
+    },
+    {
+     "name": "Maa-amet, Eesti kinnisvaraturg 2020",
+     "url": "https://www.maaruum.ee/sites/default/files/documents/2021-06/eesti_kinnisvaraturg_2020.pdf",
+     "date": "2026-11-04"
+    },
+    {
+     "name": "Maa- ja Ruumiamet, Eesti kinnisvaraturg 2025",
+     "url": "https://www.maaruum.ee/sites/default/files/documents/2026-02/Eesti%20kinnisvaraturg%202025.pdf",
+     "date": "2026-11-04"
+    }
+   ],
+   "method": "Metoodika katkestus: 2000–2005 = ainult kinnisvarabüroode vahendatud 2-toalised; alates 2010 = kõigi eluruumina müüdud korterite keskmine (Maa-amet)."
+  },
+  {
+   "id": "tartu-m2",
+   "now_item": "tartu-m2",
+   "name": "1 m² korterit Tartus",
+   "unit": "€/m²",
+   "text": "Tartu korteri ruutmeeter",
+   "values": {
+    "2000": null,
+    "2005": null,
+    "2010": 797.94,
+    "2015": 1234,
+    "2020": 1657,
+    "2025": 2498
+   },
+   "notes": {
+    "2000": "korteritehingute andmed alates 07/2003",
+    "2005": "allikat ei hangitud",
+    "2010": "12 485 kr/m² ÷ 15,6466"
+   },
+   "sources": [
+    {
+     "name": "Maa-amet, Eesti kinnisvaraturg 2010/2015/2020 (Tartu linn, keskmine hind)",
+     "url": "https://www.maaruum.ee/sites/default/files/documents/2021-06/eesti_kinnisvaraturg_2010.pdf",
+     "date": "2026-11-04"
+    },
+    {
+     "name": "Maa-amet 2015",
+     "url": "https://www.maaruum.ee/sites/default/files/documents/2021-06/eesti_kinnisvaraturg_2015.pdf",
+     "date": "2026-11-04"
+    },
+    {
+     "name": "Maa-amet 2020",
+     "url": "https://www.maaruum.ee/sites/default/files/documents/2021-06/eesti_kinnisvaraturg_2020.pdf",
+     "date": "2026-11-04"
+    },
+    {
+     "name": "Maa- ja Ruumiamet, Eesti kinnisvaraturg 2025",
+     "url": "https://www.maaruum.ee/sites/default/files/documents/2026-02/Eesti%20kinnisvaraturg%202025.pdf",
+     "date": "2026-11-04"
+    }
+   ],
+   "method": "Kõigi eluruumina müüdud korterite aritmeetiline keskmine €/m² (Tartu linn)."
+  },
+  {
+   "id": "palk",
+   "now_item": "palk",
+   "name": "Keskmine brutokuupalk",
+   "unit": "€/kuu",
+   "text": "Keskmine kuupalk",
+   "values": {
+    "2000": null,
+    "2005": 514.5,
+    "2010": 792,
+    "2015": 1065,
+    "2020": 1448,
+    "2025": 2092
+   },
+   "notes": {
+    "2000": "PA001 seeria algab 2002",
+    "2005": "PA001 nelja kvartali (475, 530, 498, 555) keskmine"
+   },
+   "sources": [
+    {
+     "name": "Statistikaamet PA001 (2002–2022)",
+     "url": "https://andmed.stat.ee/et/stat/PA001",
+     "date": "2026-11-04"
+    },
+    {
+     "name": "Statistikaamet PA103 (2021–2025) – 2025",
+     "url": "https://andmed.stat.ee/et/stat/PA103",
+     "date": "2026-11-04"
+    }
+   ],
+   "method": "Keskmine brutokuupalk, kõik tegevusalad."
+  },
+  {
+   "id": "bensiin-95",
+   "now_item": "bensiin-95",
+   "name": "Bensiin 95 (1 l)",
+   "unit": "€/l",
+   "text": "Liiter bensiini",
+   "values": {
+    "2000": null,
+    "2005": 0.798,
+    "2010": 1.11,
+    "2015": 1.108,
+    "2020": 1.253,
+    "2025": 1.559
+   },
+   "notes": {
+    "2000": "Weekly Oil Bulletini ajalugu algab 2005"
+   },
+   "sources": [
+    {
+     "name": "Euroopa Komisjon, Weekly Oil Bulletin – Prices history (EE, Euro-super 95, koos maksudega)",
+     "url": "https://energy.ec.europa.eu/document/download/906e60ca-8b6a-44e7-8589-652854d2fd3f_en?filename=Weekly_Oil_Bulletin_Prices_History_maticni_4web.xlsx",
+     "date": "2026-11-04"
+    }
+   ],
+   "method": "Iganädalaste hindade aasta aritmeetiline keskmine (€/1000 l ÷ 1000)."
+  },
+  {
+   "id": "piim",
+   "now_item": "piim",
+   "name": "Piim (1 l)",
+   "unit": "€/l",
+   "text": "Liiter piima",
+   "values": {
+    "2000": null,
+    "2005": null,
+    "2010": null,
+    "2015": null,
+    "2020": null,
+    "2025": null
+   },
+   "notes": {},
+   "sources": [],
+   "method": "Ajaloolist jaehinna aegrida ei leitud (Statistikaameti PM181 on piima kokkuostuhind, mitte poehind) – seetõttu ainult tänane hind."
+  },
+  {
+   "id": "big-mac",
+   "now_item": "big-mac",
+   "name": "Big Mac",
+   "unit": "€",
+   "text": "Big Mac",
+   "values": {
+    "2000": 2.56,
+    "2005": 2.92,
+    "2010": 3.38,
+    "2015": 3.7,
+    "2020": 4.21,
+    "2025": 5.96
+   },
+   "notes": {
+    "2000": "aprill",
+    "2005": "juuni",
+    "2010": "juuli",
+    "2015": "juuli",
+    "2020": "juuli",
+    "2025": "juuli"
+   },
+   "sources": [
+    {
+     "name": "The Economist Big Mac Index (euroala, local_price)",
+     "url": "https://raw.githubusercontent.com/TheEconomist/big-mac-data/master/output-data/big-mac-full-index.csv",
+     "date": "2026-11-04"
+    }
+   ],
+   "method": "Euroala hind (Eesti eraldi rida puudub); aasta viimane vaatlus."
+  }
+ ]
+}
