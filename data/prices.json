@@ -1,16 +1,16 @@
 {
   "updated": "2026-11-04",
   "gold": {
-    "usd_per_oz": 4036.0,
+    "usd_per_oz": 4064.899902,
     "source": "gold-api.com (XAU spot)",
     "url": "https://api.gold-api.com/price/XAU",
-    "date": "2026-11-04T08:12:58Z"
+    "date": "2026-11-04T21:26:30Z"
   },
   "fx": {
-    "usd_per_eur": 1.1179,
+    "usd_per_eur": 1.1267,
     "source": "Euroopa Keskpank (EKP) viitekurss",
     "url": "https://data-api.ecb.europa.eu/service/data/EXR/D.USD.EUR.SP00.A?lastNObservations=1&format=csvdata",
-    "date": "2026-11-03"
+    "date": "2026-11-04"
   },
   "items": [
     {
