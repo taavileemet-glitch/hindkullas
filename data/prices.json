@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-06",
+  "updated": "2026-11-07",
   "gold": {
-    "usd_per_oz": 4066.800049,
+    "usd_per_oz": 4072.100098,
     "source": "gold-api.com (XAU spot)",
     "url": "https://api.gold-api.com/price/XAU",
-    "date": "2026-11-06T20:59:35Z"
+    "date": "2026-11-07T19:33:37Z"
   },
   "fx": {
     "usd_per_eur": 1.1165,
